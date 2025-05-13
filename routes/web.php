@@ -10,8 +10,10 @@ Route::get('/', function () {
 });
 
 Route::get('/testo', function () {
-    return view('welcome');
+    $teet="testo";
+    return view('welcome',compact('teet'));
 });
+    
 
 
 Route::get('/login', function () {
